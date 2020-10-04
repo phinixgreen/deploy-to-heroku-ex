@@ -1,0 +1,277 @@
+Start DbSchema.
+==== 2020-07-04 21:22:32 DbSchema #200703 Java AdoptOpenJDK 14.0.1 ===
+Set Mac systemMenuBar
+Screen Size: [1867.0,1057.0] outputScaleY=1.0 scaleDown=false
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > next
+ > close
+ > newProjectAction
+Dialog Database Connection Dialog
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+
+Test connectivity to MySql
+java.sql.SQLException: Missing MySql JDBC database driver.
+Please edit the database connection and upload the driver .jar file.
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.q(Envoy.java:43)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:87)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.a(FxTestConnectivityTask.java:41)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.call(FxTestConnectivityTask.java:16)
+  ...
+
+Test Connection Failed <html><h2>Connectivity Error</h2>Missing MySql JDBC database driver&#46;<br>
+Please edit the database connection and upload the driver &#46;jar file&#46;<br>
+
+<h3>DbSchema Advice</h3><br>Press 'Help Me to Connect'.
+java.sql.SQLException: Missing MySql JDBC database driver.
+Please edit the database connection and upload the driver .jar file.
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.q(Envoy.java:43)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:87)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.a(FxTestConnectivityTask.java:41)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.call(FxTestConnectivityTask.java:16)
+  ...
+
+Test connectivity to MySql
+java.sql.SQLException: Missing MySql JDBC database driver.
+Please edit the database connection and upload the driver .jar file.
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.q(Envoy.java:43)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:87)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.a(FxTestConnectivityTask.java:41)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.call(FxTestConnectivityTask.java:16)
+  ...
+
+Test Connection Failed <html><h2>Connectivity Error</h2>Missing MySql JDBC database driver&#46;<br>
+Please edit the database connection and upload the driver &#46;jar file&#46;<br>
+
+<h3>DbSchema Advice</h3><br>Press 'Help Me to Connect'.
+java.sql.SQLException: Missing MySql JDBC database driver.
+Please edit the database connection and upload the driver .jar file.
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.q(Envoy.java:43)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:87)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.a(FxTestConnectivityTask.java:41)
+  at com.wisecoders.dbs.rdbms.connect.fx.FxTestConnectivityTask.call(FxTestConnectivityTask.java:16)
+  ...
+
+Test connectivity to PostgreSQL
+Connect: PostgreSQL
+Connected.
+Test connectivity done.
+ > connect
+Test connectivity to PostgreSQL
+Connect: PostgreSQL
+Connected.
+Test connectivity done.
+Successfully connected to PostgreSQL 12.3 PostgreSQL JDBC Driver 42.2.14
+Import selection task...
+Import selection task done.
+Dialog Select Schemas / Catalogs
+Start importing schema 'public' structure.
+Postgres Version is PostgreSQL 12.3 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit
+org.postgresql.util.PSQLException: No value specified for parameter 1.
+  at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:270)
+  at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:296)
+  at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+  at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+  at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:153)
+  at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:103)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.DirectQuery.a(DirectQuery.java:90)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:102)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.model.ImporterUtils.a(ImporterUtils.java:75)
+  at com.wisecoders.dbs.rdbms.plugins.PostgreSQL.listProcedureNames(PostgreSQL.java:181)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.model.StructureImporter.a(StructureImporter.java:48)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.model.StructureImporter.<init>(StructureImporter.java:21)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.fx.FxImportStructureTask$1.<init>(FxImportStructureTask.java:40)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.fx.FxImportStructureTask.a(FxImportStructureTask.java:40)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.fx.FxImportStructureTask.call(FxImportStructureTask.java:14)
+  ...
+
+Connect: PostgreSQL
+Connected.
+Finish importing schema 'public' structure.
+Import task from PostgreSQL
+Import task done.
+REVERSE ENGINEERED 0 TABLES FROM PostgreSQL.
+Show tip tipCreateTable.text with message Create new tables from the diagram right-click popup.
+Browse to https://dbschema.com/purchase.html#account
+ > newTable
+Dialog New Table
+ > addItem
+Dialog Create Index on Table tbl
+Dialog Options Dialog
+ > addColumn
+ > addFunctionalColumn
+Dialog Options Dialog
+Dialog Options Dialog
+Dialog Options Dialog
+ > addItem
+Dialog New Column in Table public.person
+ > addItem
+Dialog New Column in Table public.person
+ > addItem
+Dialog New Column in Table public.person
+Sync: Table null ~ person
+	Diff: MISSING ~ EXIST
+
+Sync: CREATE  GLOBAL TEMPORARY  TABLE "public".person ( 
+	first_name           varchar(30)   ,
+	last_name            varchar(30)   ,
+	date_of_birth        date   
+ ) 
+Connect: PostgreSQL
+Connected.
+Error during sync commit
+org.postgresql.util.PSQLException: ERROR: cannot create temporary relation in non-temporary schema
+  Position: 33
+  at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+  at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+  at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+  at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+  at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310)
+  at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273)
+  at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:247)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.SqlUpdateJob.a(SqlUpdateJob.java:23)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:102)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.e(Envoy.java:344)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.SyncPair.a(SyncPair.java:414)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.EditorSyncRoot.a(EditorSyncRoot.java:32)
+  at com.wisecoders.dbs.dialogs.layout.b.a(FxDbDialog.java:146)
+  at com.wisecoders.dbs.dialogs.layout.b.call(FxDbDialog.java:121)
+  ...
+
+org.postgresql.util.PSQLException: ERROR: cannot create temporary relation in non-temporary schema
+  Position: 33
+  at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+  at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+  at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+  at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+  at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310)
+  at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273)
+  at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:247)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.SqlUpdateJob.a(SqlUpdateJob.java:23)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:102)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.e(Envoy.java:344)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.SyncPair.a(SyncPair.java:414)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.EditorSyncRoot.a(EditorSyncRoot.java:32)
+  at com.wisecoders.dbs.dialogs.layout.b.a(FxDbDialog.java:146)
+  at com.wisecoders.dbs.dialogs.layout.b.call(FxDbDialog.java:121)
+  ...
+
+ > addItem
+Dialog Create Index on Table person
+ > addColumn
+ > addItem
+Dialog New Column in Table public.person
+ > upItem
+ > upItem
+ > upItem
+Sync: Table null ~ person
+	Diff: MISSING ~ EXIST
+
+Sync: CREATE  GLOBAL TEMPORARY  TABLE "public".person ( 
+	idx_person           integer  NOT NULL ,
+	first_name           varchar(30)   ,
+	last_name            varchar(30)   ,
+	date_of_birth        date   ,
+	CONSTRAINT pk_person_idx_person PRIMARY KEY ( idx_person )
+ ) 
+Connect: PostgreSQL
+Connected.
+Error during sync commit
+org.postgresql.util.PSQLException: ERROR: cannot create temporary relation in non-temporary schema
+  Position: 33
+  at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+  at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+  at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+  at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+  at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310)
+  at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273)
+  at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:247)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.SqlUpdateJob.a(SqlUpdateJob.java:23)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:102)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.e(Envoy.java:344)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.SyncPair.a(SyncPair.java:414)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.EditorSyncRoot.a(EditorSyncRoot.java:32)
+  at com.wisecoders.dbs.dialogs.layout.b.a(FxDbDialog.java:146)
+  at com.wisecoders.dbs.dialogs.layout.b.call(FxDbDialog.java:121)
+  ...
+
+org.postgresql.util.PSQLException: ERROR: cannot create temporary relation in non-temporary schema
+  Position: 33
+  at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532)
+  at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267)
+  at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312)
+  at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+  at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310)
+  at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296)
+  at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273)
+  at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:247)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.SqlUpdateJob.a(SqlUpdateJob.java:23)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:102)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.e(Envoy.java:344)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.SyncPair.a(SyncPair.java:414)
+  at com.wisecoders.dbs.rdbms.sync.engine.nodes.EditorSyncRoot.a(EditorSyncRoot.java:32)
+  at com.wisecoders.dbs.dialogs.layout.b.a(FxDbDialog.java:146)
+  at com.wisecoders.dbs.dialogs.layout.b.call(FxDbDialog.java:121)
+  ...
+
+Dialog Options Dialog
+Sync: Table null ~ person
+	Diff: MISSING ~ EXIST
+
+Sync: CREATE  TABLE "public".person ( 
+	idx_person           integer  NOT NULL ,
+	first_name           varchar(30)   ,
+	last_name            varchar(30)   ,
+	date_of_birth        date   ,
+	CONSTRAINT pk_person_idx_person PRIMARY KEY ( idx_person )
+ ) 
+Connect: PostgreSQL
+Connected.
+ > editUnit
+Dialog Edit Table in Schema public
+ > synchronizeRefresh
+Synchronize schemas in REFRESH mode selection null
+Connect: PostgreSQL
+Connected.
+Start importing schema 'public' structure.
+Postgres Version is PostgreSQL 12.3 on x86_64-apple-darwin16.7.0, compiled by Apple LLVM version 8.1.0 (clang-802.0.42), 64-bit
+org.postgresql.util.PSQLException: No value specified for parameter 1.
+  at org.postgresql.core.v3.SimpleParameterList.checkAllParametersSet(SimpleParameterList.java:270)
+  at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:296)
+  at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
+  at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
+  at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:153)
+  at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:103)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.DirectQuery.a(DirectQuery.java:90)
+  at com.wisecoders.dbs.rdbms.connect.model.envoy.Envoy.a(Envoy.java:102)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.model.ImporterUtils.a(ImporterUtils.java:75)
+  at com.wisecoders.dbs.rdbms.plugins.PostgreSQL.listProcedureNames(PostgreSQL.java:181)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.model.StructureImporter.a(StructureImporter.java:48)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.model.StructureImporter.<init>(StructureImporter.java:21)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.fx.FxSynchronizationTask.a(FxSynchronizationTask.java:86)
+  at com.wisecoders.dbs.rdbms.reverseEngineer.fx.FxSynchronizationTask.call(FxSynchronizationTask.java:28)
+  ...
+
+Connect: PostgreSQL
+Connected.
+Finish importing schema 'public' structure.
+Save project as...
